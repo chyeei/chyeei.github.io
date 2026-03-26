@@ -1,0 +1,166 @@
+body {
+	font-family: 'Pretendard', sans-serif;
+	background: #ffffff;
+	color: #0a192f;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Pretendard', sans-serif;
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.container > div {
+	margin: 20px auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+}
+@media (max-width: 480px) {
+    .about-grid{
+        grid-template-columns:100%;
+    }
+}
+
+.aboutme, .whativalue {
+    text-align: center;
+    text-decoration: none
+}
+
+.about-list {
+    list-style: square;
+    padding: 10;
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.hobbies {
+    text-align: center; 
+}
+
+.hobby-list {
+    display: flex;
+    justify-content:center;
+    gap:30px;
+}
+@media(max-width:650px){
+    .hobby-list{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+.hobby-item{
+    text-align:center;
+    cursor:pointer;
+}
+.hobby-item img{
+    width: 240px;
+    height: 240px;
+    border-radius:50%;
+    object-fit:cover;
+    transition: all 0.3s ease;
+}
+.hobby-item img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(59,139,246,0.25);
+}
+.hobby-item p{
+    margin-top:10px;
+    font-weight:500;
+    color: #0a192f;
+}
+.hobby-item:hover p{
+    color: #3b82f6;
+}
+
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+@media(max-width:650px){
+    .links-and-contact{
+        grid-template-columns:100%;
+    }
+}
+
+.links {
+    justify-self: center;
+}
+
+
+
+form input {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+#question{
+    width:100%;
+    max-width:500px;
+    height: 100px;
+    padding: 10px;
+    border-radius:8px;
+    resize:none;
+    margin-bottom:15px;
+}
+
+form {
+	width: 100%;
+	max-width: 500px;
+    margin: 0 auto;
+    text-align:left;
+}
+
+form input[type="submit"] {
+	width: 250px;
+    display:block;
+    margin:20px auto;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+    background-color: rgb(77, 77, 170);
+    color: black;
+}
+
+.map{
+    text-align: center;
+}
+
+.profile-picture{
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 0 10px 20px 0  rgba(34,60,80,.16);
+    transition: transform 0.2 ease;
+}
+.profile-picture:hover{
+    filter: brightness(.75);
+    box-shadow:0 8px 12px 0 rgba(59,130,246,0.6);
+}
+.book-picture{
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 0 10px 20px 0  rgba(34,60,80,.16);
+}
+
+
+hr {
+    border: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+.intro p{
+    color:  #3b82f6;
+}
